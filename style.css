@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #05001d;
+}
+
+div {
+  width: 100%;
+  text-align: center;
+  color: #ff0066; /* Initial color */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-weight: 800;
+  animation: changeColor 5s infinite; /* Change color every 5 seconds */
+  transition: color 0.5s ease; /* Smooth color transition */
+}
+
+@keyframes changeColor {
+  0% { color: #ff0066; }
+  25% { color: #66ff33; }
+  50% { color: #ffcc00; }
+  75% { color: #0099ff; }
+  100% { color: #ff6699; }
+}
+
+div span {
+  font-size: 18vw;
+  text-shadow: -0.08em 0.03em 0.12em rgba(255, 255, 255, 0.5); /* White text shadow */
+}
+
+div span:not(:first-child) {
+  margin-left: -0.18em;
+}
+
+/* navbar.css */
+.navbar {
+  background-color: #f5f5f5; /* Off-white background color */
+  padding: 10px 20px; /* Adjust padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease; /* Smooth color transition */
+  display: flex;
+  justify-content: flex-end; /* Align items towards the right */
+}
+
+.nav-list {
+  list-style: none;
+  display: inline-flex; /* Display items in a row */
+}
+
+.nav-list li {
+  margin: 0 10px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: color 0.3s ease; 
+}
+
+.nav-list li a:hover {
+  color: #ff0066; /* Random color on hover */
+  transition: color 0.3s ease;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: rgba(255, 255, 255, 0.9); /* White transparent background */
+  color: #000; /* Black text */
+  text-align: center;
+  padding: 20px; /* Adjust padding */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to the bottom */
+  z-index: 999; /* Ensure the footer appears above other content */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  margin: 0;
+  color: #000; /* Set text color to black */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer p:first-child {
+  flex: 1; /* Allow the first paragraph to grow and fill available space */
+  text-align: center; /* Center the text */
+}
+
+.footer p:hover {
+  color: #ff0066;  /* Change text color to #333 on hover */
+}
+
+/* Adjust styles for the quote below "LEARNIVERSE" */
+.learniverse {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #ff0066; /* Initial color */
+  font-weight: 600;
+  animation: changeColor 5s infinite; /* Change color every 5 seconds */
+  transition: color 0.5s ease; /* Smooth color transition */
+}
+
+.quote {
+  font-size: 1.5em; /* Increase font size as desired */
+  font-style: italic; /* Make it italic */
+  font-family: "Poppins", sans-serif; /* Use the desired font family */
+  margin-top: 10px; /* Add some top margin */
+}
+
+/* Add the keyframes for color changing */
+@keyframes changeColor {
+  0% { color: #ff0066; }
+  25% { color: #66ff33; }
+  50% { color: #ffcc00; }
+  75% { color: #0099ff; }
+  100% { color: #ff6699; }
+}
+
+
+
