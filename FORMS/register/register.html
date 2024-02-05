@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="shortcut icon" type="image/x-icon" href="online-registration.png">
+    <title>Volunteer Registration</title>
+</head>
+<body>
+    <form id="volunteerForm" onsubmit="validateForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="education">Education Level:</label>
+        <input type="text" id="education" name="education" required>
+
+        <label for="university">Current University:</label>
+        <input type="text" id="university" name="university" required>
+
+        <label for="aadhar">Aadhar No:</label>
+        <input type="text" id="aadhar" name="aadhar" required>
+
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="hours">No of Hours Available:</label>
+        <input type="number" id="hours" name="hours" required>
+
+        <label for="speciality">Subject Speciality:</label>
+        <input type="text" id="speciality" name="speciality" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="register.js"></script>
+</body>
+</html>
